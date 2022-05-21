@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+	<link rel="icon" href="favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+	<title>Неофициальный Кинопоиск</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__body">
+					<div class="header__title"><a href="index.html" title="Неофициальный кинопоиск"
+							tabindex="-1">Неофициальный кинопоиск</a></div>
+					<fieldset class="searchform hidden">
+						<div class="select">
+							<input class="select__input" id="sort" type="hidden" name="sort" value="">
+							<button class="select__current" tabindex="1">Сортировать</button>
+							<div class="select__list">
+								<button class="select__item" data-value="year">По году выпуска</button>
+								<button class="select__item" data-value="name">По названию</button>
+								<button class="select__item" data-value="country">По стране</button>
+								<button class="select__item" data-value="genre">По жанру</button>
+								<button class="select__item" data-value="ruType">По типу</button>
+							</div>
+						</div>
+						<div class="search">
+							<div class="search__field"><input type="text" name="search" id="" placeholder="Поиск"
+									maxlength="55" tabindex="2"></div>
+							<input type="button" value="Найти" class="search__button" tabindex="3">
+						</div>
+					</fieldset>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="container">
+				<div class="moovies moovies--center hidden"></div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__body">
+					<div class="pagination block--center"></div>
+					<div class="getmore block--center">Показать еще</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div class="topbutton hidden"><img src="img/topbutton.png" alt=""></div>
+	<div class="msmessage">
+		<div class="msmessage__body">Ваш браузер не поддерживается!</div>
+	</div>
+	<script type="text/javascript" src="js/script.min.js"></script>
+</body>
+
+</html>
