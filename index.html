@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Для современных браузеров -->
+	<link rel="shortcut icon" href="images/favicons/favicon.png" type="image/x-icon">
+	<!-- Для Apple Touch и iOS-->
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<!-- Для Android -->
+	<link rel="manifest" href="manifest.json">
+	<link rel="stylesheet" type="text/css" href="css/style.min.css?_v=20230305020741">
+	<title>Неофициальный кинопоиск</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__body">
+					<h1 class="header__title">
+						<a href="#" title="Неофициальный кинопоиск" tabindex="-1">Неофициальный кинопоиск</a>
+					</h1>
+					<div class="header-search hidden">
+						<div class="select select--experts" data-select id="sort">
+							<input type="hidden" class="select__input" id="sort" name="sort" tabindex="-1" value="" data-input>
+							<button class="select__current" tabindex="1" data-current>Выберите пункт</button>
+							<div class="select__list" data-list>
+								<button class=select__item data-value="year" data-item tabindex="1">По&#160;году
+									выпуска</button><button class=select__item data-value="name" data-item
+									tabindex="1">По&#160;названию</button><button class=select__item data-value="country"
+									data-item tabindex="1">По&#160;стране</button><button class=select__item data-value="genre"
+									data-item tabindex="1">По&#160;жанру</button><button class=select__item data-value="ruType"
+									data-item tabindex="1">По&#160;типу</button><button
+									class='select__item select__item--desktop' data-value="ratingKinopoisk" data-item
+									tabindex="1">По&#160;рейтингу KP</button><button class='select__item select__item--desktop'
+									data-value="ratingImdb" data-item tabindex="1">По&#160;рейтингу IMDB</button>
+							</div>
+						</div>
+						<div class="search search--experts">
+							<div class="search__field"><input type="text" name="search" id="search" placeholder="Поиск"
+									maxlength="55" tabindex="2" autocomplete="off"></div>
+							<input type="button" value="Найти" class="search__button" tabindex="3">
+						</div>
+						<div class="sortdirection sortdirection--experts" tabindex="0">
+							<label for="sdir">
+								<input type="checkbox" name="sdir" id="sdir">
+								<span class="checkbox"></span>
+								<span class="sortdirection__title">Обратная сортировка</span>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="container">
+				<div class="movies movies--center hidden"></div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__body">
+					<div class="pagination block--center"></div>
+					<div class="getmore block--center"></div>
+				</div>
+			</div>
+		</footer>
+		<div class="topbuttons">
+			<svg class="arrow arrow--up transparency" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+				<path fill="currentColor"
+					d="M256 29.816l-231 154v106.368l231-154 231 154V183.816zm0 128.043L105 259.783v90.283l151-101.925 151 101.925v-90.283zm0 112l-87 58.725v67.6l87-58 87 58v-67.6zm0 89.957l-87 58v64.368l87-58 87 58v-64.368z" />
+			</svg>
+			<svg class="arrow arrow--down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+				<path fill="currentColor"
+					d="M256 29.816l-231 154v106.368l231-154 231 154V183.816zm0 128.043L105 259.783v90.283l151-101.925 151 101.925v-90.283zm0 112l-87 58.725v67.6l87-58 87 58v-67.6zm0 89.957l-87 58v64.368l87-58 87 58v-64.368z" />
+			</svg>
+		</div>
+		<div class="msmessage">
+			<div class="msmessage__body">Ваш браузер не&#160;поддерживается!</div>
+		</div>
+		<div class="paransa hidden">
+			<div class="loader-box">
+				<div class="loader"></div>
+			</div>
+		</div>
+	</div>
+	<script src="js/script.min.js?_v=20230305020741"></script>
+</body>
+
+</html>
